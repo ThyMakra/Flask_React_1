@@ -55,3 +55,15 @@ All the steps:
         > `--no-debugger`. \
         Since this Flask backend is strictly an API server, we will never be serving complete pages, so having the `browser-based debugger` enabled serves no purpose, as it's just going to mess up the JSON responses that the API returns.\
         You will see stack traces of your errors in the terminal.
+
+4. Running the combined project
+    1. Open the 1st terminal and start the front-end server
+
+            npm start
+
+    2. Open the 2nd terminal and start the flask backend
+
+            npm run start-api
+
+    > The frontend will redirect any requests it does not recognize to the backend. \
+    Both are watching their source code files and will restart when changes are made.
